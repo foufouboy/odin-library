@@ -160,6 +160,7 @@ footer.disclaimer {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .form-container {

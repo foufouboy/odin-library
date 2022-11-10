@@ -48,12 +48,19 @@ function updateBooks() {
 // ----- CONSTANTS
 
 const books = [];
+const addBookButton = document.querySelector("header button.add-book");
+console.log(addBookButton);
+const bookStatusButton = document.querySelector("button.book-status");
+const submitBookButton = document.querySelector("button[type=\"submit\"]");
+const bookModal = document.querySelector(".add-book-modal");
 
 // ----- MAIN EXECUTION
 
 function main() {
-    const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, false);
-    console.log(theHobbit.presentation());
+
+    addBookButton.addEventListener("click", (e) => {
+        bookModal.style.display = "flex"; 
+    })
 }
 
 main();
