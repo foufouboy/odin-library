@@ -15,9 +15,73 @@
         <button class="add-book">Add book</button>
     </header>
     <main class="library">
+        <div class="book-card">
+            <img class="book-image" src="" alt="">
+            <div class="book-description">
+                <p class="book-title">My Broken Mariko</p>
+                <p class="book-author">Waka Hirako</p>
+                <div class="book-description-bottom">
+                    <p class="book-pages">Pages: <span>121</span></p>
+                    <button class="book-status">Mark as read</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="book-card">
+            <img class="book-image" src="" alt="">
+            <div class="book-description">
+                <p class="book-title">My Broken Mariko</p>
+                <p class="book-author">Waka Hirako</p>
+                <div class="book-description-bottom">
+                    <p class="book-pages">Pages: <span>121</span></p>
+                    <button class="book-status">Mark as read</button>
+                </div>
+            </div>
+        </div>
+        <div class="book-card">
+            <img class="book-image" src="" alt="">
+            <div class="book-description">
+                <p class="book-title">My Broken Mariko</p>
+                <p class="book-author">Waka Hirako</p>
+                <div class="book-description-bottom">
+                    <p class="book-pages">Pages: <span>121</span></p>
+                    <button class="book-status">Mark as read</button>
+                </div>
+            </div>
+        </div> -->
     </main>
+    <div class="add-book-modal">
+        <div class="form-container">
+            <p class="form-title">Add a new book</p>
+            <form method="POST" action="#">
+                <div class="input-container">
+                    <label for="book-title">Title</label>
+                    <input type="text" id="book-title" required minlength="3">
+                </div>
+                <div class="input-container">
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author" required minlength="3">
+                </div>
+                <div class="input-container">
+                    <label for="book-pages">Pages</label>
+                    <input type="number" id="book-pages" min="1" required>
+                </div>
+                <div class="input-container">
+                    <label for="book-image">Image URL</label>
+                    <input type="url" pattern=".+(jpg|jpeg|png|webp)$" title="The link of your image must finish with an appropriate extension : jpg, jpeg, png or webp.">
+                </div>
+                <div class="input-container">
+                    <label for="book-read">Read</label>
+                    <input type="checkbox" id="book-read">
+                </div>
+                <div class="input-container">
+                    <button type="submit" class="add-book">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <footer class="disclaimer">
-        <p>Created by me</p>
+        <p>Created by <a href="https://github.com/foufouboy">me</a></p>
+        
     </footer>
 </body>
 </html>
