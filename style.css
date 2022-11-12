@@ -73,6 +73,7 @@ main.library {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 400px;
     box-shadow: 0px 15px 15px -15px rgb(0 0 0 / .1) inset;
     /* On peut normalement retirer le box-shadow. Mais après */
     padding: 40px 40px;

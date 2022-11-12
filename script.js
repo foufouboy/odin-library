@@ -34,7 +34,7 @@ Book.prototype.setDisplay = function () {
     const bookCard = document.createElement("div");
     bookCard.classList.add("book-card"); 
 
-    const bookImage = document.createElement("img");
+    const bookImage = document.createElement("div");
     bookImage.classList.add("book-image");
 
     const bookDesc = document.createElement("div");
@@ -70,8 +70,6 @@ Book.prototype.setDisplay = function () {
     bookAuthor.textContent = this.author;
     bookImage.style.backgroundImage = this.image;
     bookImage.style.backgroundSize = "cover";
-    bookImage.src = "#";
-    bookImage.alt = " ";
 
     if (!this.image) {
         bookImage.style.flex = "initial";
