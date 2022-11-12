@@ -70,8 +70,8 @@ Book.prototype.setDisplay = function () {
     bookAuthor.textContent = this.author;
     bookImage.style.backgroundImage = this.image;
     bookImage.style.backgroundSize = "cover";
-    bookImage.src = "";
-    bookImage.alt = "";
+    bookImage.src = "#";
+    bookImage.alt = " ";
 
     if (!this.image) {
         bookImage.style.flex = "initial";
