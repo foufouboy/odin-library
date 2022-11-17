@@ -93,7 +93,7 @@ main.library {
 
 .book-image {
     opacity: .9;
-    background-image: url("https://static.fnac-static.com/multimedia/Images/FR/NR/68/d9/c2/12769640/1507-1/tsp20201217115104/My-Broken-Mariko.jpg");
+    /* background-image: url("https://static.fnac-static.com/multimedia/Images/FR/NR/68/d9/c2/12769640/1507-1/tsp20201217115104/My-Broken-Mariko.jpg"); */
     background-size: cover;
     border-radius: 5px;
     flex: 1;
